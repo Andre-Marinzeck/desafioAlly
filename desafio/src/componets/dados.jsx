@@ -1,17 +1,22 @@
 import React from "react";
+import { DataContainer } from "../style";
 
 export function DadosPessoais() {
-    return (
-      <div>
-        <h2>Dados Pessoais</h2>
-        <label>Nome</label>
-        <input type="text" required/>
-        <label>Email</label>
-        <input type="email" required />
-        <label>Telefone</label>
-        <input type="number" required />
-        <label>CPF</label>
-        <input type="text" required />
-      </div>
-    );
+  return (
+    <DataContainer>
+      <h2>Dados Pessoais</h2>
+      
+      <label for="name">Nome</label>
+      <input id="name" type="text" required />
+
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="  Email@dominio.com" required/>
+
+      <label for="tel">Telefone</label>
+      <input id="tel" type="number" placeholder="  (XX) XXXXX-XXXX" required />
+
+      <label for="cpf">CPF</label>
+      <input id="cpf" type="text" required />
+    </DataContainer>
+  );
 }

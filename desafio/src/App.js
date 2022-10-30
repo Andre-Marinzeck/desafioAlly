@@ -1,21 +1,23 @@
-
 import { DadosPessoais } from "./componets/dados";
 import Destinos from "./componets/destinos";
+import { Container, Form, GlobalStyle } from "./style";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-      <form>
-        <div>
-          <DadosPessoais/>
-        </div>
-        <div>
-          <Destinos/>
-          <button>Criar</button>
-        </div>
-      </form>
-    </div>
+    <Container>
+      <GlobalStyle  />
+      <h1>Destinos de Interesse</h1>
+      <div>
+        <Form>
+          <div>
+            <DadosPessoais />
+          </div>
+          <div>
+            <Destinos />
+          </div>
+        </Form>
+      </div>
+    </Container>
   );
 }
 
