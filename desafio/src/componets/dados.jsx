@@ -6,16 +6,16 @@ export function DadosPessoais() {
     <DataContainer>
       <h2>Dados Pessoais</h2>
       
-      <label for="name">Nome</label>
+      <label htmlFor="name">Nome</label>
       <input id="name" type="text" required />
 
-      <label for="email">Email</label>
+      <label htmlFor="email">Email</label>
       <input id="email" type="email" placeholder="  Email@dominio.com" required/>
 
-      <label for="tel">Telefone</label>
+      <label htmlFor="tel">Telefone</label>
       <input id="tel" type="number" placeholder="  (XX) XXXXX-XXXX" required />
 
-      <label for="cpf">CPF</label>
+      <label htmlFor="cpf">CPF</label>
       <input id="cpf" type="text" required />
     </DataContainer>
   );
